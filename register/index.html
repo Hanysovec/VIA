@@ -40,23 +40,28 @@
     </header>
 
     <div class="body-div">
-        <div class="formContent">
+        <form class="formContent">
             <div class="h2Div">
                 <h2>Registrace makro karty</h2>
             </div>
             <div class="basicInfo">
                 <h3>Vyplňte základní informace o firmě / podnikání</h3>
-                <p>IČ *</p>
-                <input>
-                <!-- CHECKBOX -->
+                <label>
+                    <p>IČ *</p>
+                    <input type="number" name="ico" required>
+                </label>
                 <div class="Columns2">
                     <div class="Columns2-left">
-                        <p>DIČ</p>
-                        <input>
+                        <label>
+                            <p>DIČ</p>
+                            <input type="text" name="dic">
+                        </label>
                     </div>
                     <div class="Columns2-right">
-                        <p>Název společnosti / jméno OSVČ</p>
-                        <input>
+                        <label>
+                            <p>Název společnosti / jméno OSVČ</p>
+                            <input type="text" name="company_name">
+                        </label>
                     </div>
                 </div>
             </div>
@@ -64,73 +69,115 @@
                 <h3>Fakturační adresa</h3>
                 <div class="Columns2">
                     <div class="Columns2-left">
-                        <p>Ulice *</p>
-                        <input>
+                        <label>
+                            <p>Ulice *</p>
+                            <input type="text" name="street" required>
+                        </label>
                     </div>
                     <div class="Columns2-right">
-                        <p>Č. popisné / Č. orientační *</p>
-                        <input>
+                        <label>
+                            <p>Č. popisné / Č. orientační *</p>
+                            <input type="text" name="street_number" required>
+                        </label>
                     </div>
                 </div>
-                <p>Město *</p>
-                <input>
+                <label>
+                    <p>Město *</p>
+                    <input type="text" name="city" required>
+                </label>
                 <div class="Columns2">
                     <div class="Columns2-left">
-                        <p>PSČ</p>
-                        <input>
+                        <label>
+                            <p>PSČ *</p>
+                            <input type="number" name="postal_code" required>
+                        </label>
                     </div>
                     <div class="Columns2-right">
-                        <p>Země *</p>
-                        <select>
-                        </select>
+                        <label>
+                            <p>Země *</p>
+                            <select name="country" required>
+                                <option value="cs" selected>Česká Republika</option>
+                                <option value="sk" selected>Slovenská Republika</option>
+                            </select>
+                        </label>
                     </div>
                 </div>
             </div>
             <div class="bussiness">
                 <h3>Typ Vašeho podnikání</h3>
-                <p>Typ podnikání *</p>
-                <select>
-
-                </select>
-                <p>Přibližte nám své podnikání *</p>
-                <input>
+                <label>
+                    <p>Typ podnikání *</p>
+                    <select name="business_type" required>
+                        <option value="hotely" selected>Hotely, restaurace, kavárny a další gastro provozy</option>
+                        <option value="Maloobchod" selected>Maloobchod</option>
+                        <option value="sluzby" selected>Služby, firmy, kanceláře, drobné živnosti</option>
+                    </select>
+                </label>
+                <label>
+                    <p>Přibližte nám své podnikání *</p>
+                    <input type="text" name="business_description" required>
+                </label>
             </div>
             <div class="store">
                 <h3>Prodejna makro</h3>
-                <p>Na této prodejně bude Vaše karta připravena k vyzvednutí za 24 hodin *</p>
-                <select>
-
-                </select>
+                <label>
+                    <p>Na této prodejně bude Vaše karta připravena k vyzvednutí za 24 hodin *</p>
+                    <select name="store" required>
+                        <option value="" disabled selected>Zvolte</option>
+                        <option value="brno">Brno</option>
+                        <option value="cb">České Budějovice</option>
+                        <option value="hk">Hradec Králové</option>
+                        <option value="kv">Karlovy vary</option>
+                        <option value="liberec">Liberec</option>
+                        <option value="olomouc">Olomouc</option>
+                        <option value="ostrava">Ostrava</option>
+                        <option value="plzen">Plzeň</option>
+                        <option value="praha1">Praha - Černý Most</option>
+                        <option value="praha2">Praha - Průhonice</option>
+                        <option value="praha3">Praha - Stodůlky</option>
+                        <option value="usti">Ústí nad labem</option>
+                        <option value="zlin">Zlín</option>
+                    </select>
+                </label>
             </div>
             <div class="promoCode">
                 <h3>Promo kód</h3>
-                <input>
+                <label>
+                    <input type="text" name="promo_code">
+                </label>
             </div>
             <div class="contacts">
                 <h3>Kontakty</h3>
                 <div class="columns3">
                     <div class="columns3-left">
-                        <p>E-mail</p>
-                        <input>
+                        <label>
+                            <p>E-mail *</p>
+                            <input type="email" name="email" required>
+                        </label>
                     </div>
                     <div class="columns3-mid">
-                        <p>Telefon</p>
-                        <input>
+                        <label>
+                            <p>Předčíslí</p>
+                            <input type="text" name="phone_prefix">
+                        </label>
                     </div>
                     <div class="columns3-right">
-                        <p>Předčíslí</p>
-                        <input>
+                        <label>
+                            <p>Telefon</p>
+                            <input type="tel" name="phone">
+                        </label>
                     </div>
                 </div>
             </div>
             <div class="disclaimer">
                 <p>E-mailová adresa a telefonní číslo slouží pro potvrzení žádosti o registraci a jako kontakt s vaší společností</p>
             </div>
-            <button>
+            <button type="submit">
                 Pokračovat k zadání údajů na kartě
             </button>
-        </div>
+        </form>
     </div>
+    
 
     <footer class="footer">
         <div class="footer-top">
