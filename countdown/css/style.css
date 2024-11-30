@@ -5,6 +5,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+}
 
 header {
     background-color: #002D72;
@@ -25,7 +37,6 @@ header {
     margin-right: 20px;
     padding: 10px 0px;
 }
-
 .nav-links {
     display: flex;
     align-items: center;
@@ -87,120 +98,47 @@ header {
     display: block;
 }
 
+.register {
+    background-color: #0059E4;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+    align-self: stretch;
+    margin-left: auto;
+    transition: background-color 0.3s ease;
+}
+.register:hover{
+    background-color: #003d99;
+}
+
 
 /* BODY */
-
-
 .body-div {
-    padding: 2% 30.0%;
+    padding: 2% 22.5%;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #f2f3f5;
+    align-content: center;
 }
 
-.h2Div h2 {
-    color: #002D72;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    text-align: left;
+#countdown {
+    font-family: Lato, sans-serif;
+    text-align: center;
+    margin: 50px;
+    font-size: 24px;
 }
 
-.formContent {
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-}
-
-h3 {
-    color: #002D72;
-    margin-bottom: 15px;
-}
-
-p {
-    color: #001432;
+#time {
     font-weight: bold;
-    margin-bottom: 5px;
+    font-size: 32px;
 }
-
-input, select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.Columns2 {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.Columns2-left,
-.Columns2-right {
-    flex: 1;
-}
-
-.columns3 {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.columns3-left,
-.columns3-mid,
-.columns3-right {
-    flex: 1;
-}
-
-button {
-    background-color: #002D72;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
-    display: block;
-    width: 100%;
-}
-
-button:hover {
-    background-color: #0059E4;
-}
-
-.disclaimer p {
-    color: #001432;
-    font-size: 14px;
-    margin-top: 10px;
-}
-
-input.invalid, select.invalid {
-    background-color: #ffe6e6;
-}
-
-.invalid-text {
-    color: red;
-}
-
-input.invalid + p::before, select.invalid + p::before {
-    content: ' Toto pole je povinné';
-    color: red;
-    font-size: 12px;
-    display: block;
-    margin-top: 5px;
-}
-
-
 
 /* FOOTER */
 
-
-.nav-links li a img {
-    margin-right: 8px;
-    filter: invert(1);
-}
 
 .footer {
     background-color: #FFFFFF;

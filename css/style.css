@@ -46,6 +46,7 @@ header {
 }
 
 .nav-links li {
+    position: relative;
     background-color: #002D72;
     border: 2px solid #FFFFFF;
     border-radius: 20px;
@@ -66,6 +67,37 @@ header {
 .nav-links li a img {
     margin-right: 8px;
     filter: invert(1);
+}
+
+.submenu {
+    list-style: none;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+    z-index: 10;
+    align-items: center;
+}
+
+.submenu li {
+    margin: 0;
+}
+
+.submenu li a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: Lato, sans-serif;
+}
+
+.nav-links .has-submenu:hover .submenu {
+    display: block;
 }
 
 .register {
