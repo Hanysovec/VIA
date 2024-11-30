@@ -16,7 +16,7 @@ header {
 .header-top {
     display: flex;
     align-items: center;
-    padding: 0% 22.5%;
+    padding: 0% 10.5%;
     color: #002D72;
 }
 .logo {
@@ -207,7 +207,7 @@ input.invalid + p::before, select.invalid + p::before {
     color: #002D72;
 }
 .footer-top{
-    padding: 0% 22.5%;
+    padding: 0% 10.5%;
 }
 
 .footer-subtop {
@@ -276,7 +276,7 @@ input.invalid + p::before, select.invalid + p::before {
 
 .footer-bottom {
     background-color: #002D72;
-    padding: 0% 22.5%;
+    padding: 0% 10.5%;
 }
 .footer-bottom-subdiv {
     padding: 20px 24px;

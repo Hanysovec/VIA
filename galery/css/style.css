@@ -29,7 +29,7 @@ header {
 .header-top {
     display: flex;
     align-items: center;
-    padding: 0% 22.5%;
+    padding: 0% 10.5%;
     color: #002D72;
 }
 .logo {
@@ -118,7 +118,7 @@ header {
 }
 
 .header-bottom {
-    padding: 10px 22.5%;
+    padding: 10px 10.5%;
     background-color: #CCE0FF;
     align-items: center;
     display: flex;
@@ -203,7 +203,7 @@ header {
 
 /* BODY */
 .body-div {
-    padding: 2% 22.5%;
+    padding: 2% 10.5%;
     margin-top: 10px;
     margin-bottom: 10px;
     align-content: center;
@@ -306,7 +306,7 @@ header {
     color: #002D72;
 }
 .footer-top{
-    padding: 0% 22.5%;
+    padding: 0% 10.5%;
 }
 
 .footer-subtop {
@@ -375,7 +375,7 @@ header {
 
 .footer-bottom {
     background-color: #002D72;
-    padding: 0% 22.5%;
+    padding: 0% 10.5%;
 }
 .footer-bottom-subdiv {
     padding: 20px 24px;
