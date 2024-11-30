@@ -123,19 +123,78 @@ header {
     margin-top: 10px;
     margin-bottom: 10px;
     align-content: center;
+    font-size: 16px;
+    font-family: Lato, sans-serif;
+    background-color: #f2f3f5;
 }
 
-#countdown {
+.soutez, .podminky, .nestle, .nestle-logo {
+    background-color: #ffffff;
+    padding: 20px 0px 10px 10px;
+    text-align: center;
+    align-content: center;
+}
+
+#countdown span {
+    display: inline-block;
     font-family: Lato, sans-serif;
     text-align: center;
-    margin: 50px;
-    font-size: 24px;
+    font-size: 16px;
 }
 
-#time {
-    font-weight: bold;
-    font-size: 32px;
+
+main.body-div h2 {
+    color: #002D72;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
+
+main.body-div h3 {
+    color: #002D72;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-transform: none;
+}
+
+main.body-div span {
+    color: #33435B;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+main.body-div button {
+    background-color: #0059E4;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+main.body-div button:hover {
+    background-color: #0041a8;
+}
+
+main.body-div img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+main.body-div img:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+main.body-div > div {
+    margin-bottom: 30px;
+}
+
+
 
 /* FOOTER */
 
